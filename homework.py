@@ -24,6 +24,7 @@ class InfoMessage:
 
 class Training:
     """Базовый класс тренировки."""
+
     LEN_STEP: float = 0.65
     M_IN_KM: int = 1000
     HOUR_IN_MIN: int = 60
@@ -62,6 +63,7 @@ class Training:
 
 class Running(Training):
     """Тренировка: бег."""
+
     CALORIES_MEAN_SPEED_MULTIPLIER: int = 18
     CALORIES_MEAN_SPEED_SHIFT: float = 1.79
 
@@ -79,6 +81,7 @@ class Running(Training):
 
 class SportsWalking(Training):
     """Тренировка: спортивная ходьба."""
+
     CALORIES_MEAN_SPEED_MULTIPLIER: float = 0.035
     CALORIES_MEAN_SPEED_SHIFT: int = 2
     WEIGHT_MULTIPLIER: float = 0.029
@@ -101,6 +104,7 @@ class SportsWalking(Training):
 
 class Swimming(Training):
     """Тренировка: плавание."""
+
     SPEED_ADDITIVE = 1.1
     SPEED_MULTIPLIER = 2.0
     LEN_STEP = 1.38
